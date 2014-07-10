@@ -1,0 +1,17 @@
+*.diff
+*.err
+*.orig
+*.log
+*.rej
+*.swo
+*.swp
+*.zip
+*.rar
+*.vi
+.DS_Store
+._*
+Thumbs.db
+
+/bower_components
+/node_modules
+.idea

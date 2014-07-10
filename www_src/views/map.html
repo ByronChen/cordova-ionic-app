@@ -1,0 +1,60 @@
+<style type="text/css">
+#bmap div.anchorBL {
+ 	display: none;
+}
+#location-btn{
+	position: absolute; 
+	bottom: 10px; 
+	left: 10px;
+	width: 32px;
+	height: 32px;
+	line-height: 32px;
+	font-size: 25px;
+	text-align: center;
+	background: #fff;
+	opacity:0.8;
+	border: #ccc solid 1px;
+	border-radius: 7px;
+}
+/*修改系统样式*/
+.item-input-inset{
+	padding:0px;
+}
+.item-input-wrapper{
+	border-radius: 0px;
+}
+.placeholder-icon:first-child {
+	padding-right: 8px;
+}
+.bar.item-input-inset .item-input-wrapper input {
+	padding-left: 2px;
+	height: 30px;
+}
+</style>
+
+<ion-view>
+	<ion-header-bar class="bar-dark item-input-inset nav-title-slide-ios7">
+		<div class="buttons">
+	    	<button menu-toggle="left" class="button button-icon icon ion-navicon"></button>
+	  	</div>
+	  	<div class="item-input-wrapper">
+			<i class="icon ion-search placeholder-icon"></i>
+			<input id="search-input" type="text" placeholder="搜索观测站-演示输入'g'或'南山'" ng-model="keyword" ng-change="searchGcz()"/>
+		</div>
+	  	<div class="buttons">
+	  		<button class="button button-icon icon" ng-class="{'ion-ios7-arrow-up': isHideSearchBox, 'ion-ios7-arrow-down': !isHideSearchBox}" ng-click="isHideSearchBox =! isHideSearchBox"></button>
+	  	</div>
+	</ion-header-bar>
+
+	<ion-content class="has-header">
+		<div id="bmap"></div>
+		<div id="location-btn" class="icon ion-pinpoint" ng-click="getLocation()"></div>
+		<div class="sample-show-hide" ng-hide="isHideSearchBox" style="position: absolute; top: 0px; left: 0px; width:100%;">
+			<ul class="list">
+			    <li class="item" ng-repeat="gcz in gczList" ng-click="selectGcz({{gcz.id}})">
+			    	{{gcz.road}} {{gcz.name}}
+			    </li>
+			</ul>
+		</div>
+	</ion-content>
+</ion-view>

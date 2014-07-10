@@ -1,0 +1,28 @@
+<ion-side-menus>
+
+  <ion-pane ion-side-menu-content>
+    <ion-nav-view name="menuContent" animation="slide-left-right"></ion-nav-view>
+  </ion-pane>
+
+  <ion-side-menu side="left">
+    <header class="bar bar-header bar-stable">
+      <h1 class="title">功能菜单</h1>
+    </header>
+    <ion-content class="has-header">
+      <ion-list>
+        <ion-item nav-clear menu-close ng-click="login()">
+          <i class="icon ion-pound"></i>
+          登录界面
+        </ion-item>
+        <ion-item nav-clear menu-close href="#/app/map">
+          <i class="icon ion-home"></i>
+          首页地图
+        </ion-item>
+        <ion-item nav-clear menu-close href="#/app/video">
+          <i class="icon ion-videocamera"></i>
+          视频列表
+        </ion-item>
+      </ion-list>
+    </ion-content>
+  </ion-side-menu>
+</ion-side-menus>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+        <title></title>
+
+        <!-- build:css public/css/lib.bundle.min.css -->
+        <!-- bower:js -->
+        <link rel="stylesheet" href="../bower_components/ionic/release/css/ionic.css" />
+        <!-- endbower -->
+        <!-- endbuild -->
+
+        <!-- build:js public/js/lib.bundle.min.js -->
+        <!-- bower:js -->
+        <script src="../bower_components/angular/angular.js"></script>
+        <script src="../bower_components/angular-animate/angular-animate.js"></script>
+        <script src="../bower_components/angular-sanitize/angular-sanitize.js"></script>
+        <script src="../bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+        <script src="../bower_components/ionic/release/js/ionic.js"></script>
+        <script src="../bower_components/ionic/release/js/ionic-angular.js"></script>
+        <!-- endbower -->
+        <!-- endbuild -->
+
+        <!-- cordova script (this will be a 404 during development) -->
+        <!-- build:js public/js/cordova.bundle.min.js -->
+        <script src="cordova.js"></script>
+        <script type="text/javascript" src="plugins/nl.x-services.plugins.toast/www/Toast.js"></script>
+        <!-- endbuild -->
+
+        <!-- build:js public/js/app.bundle.min.js -->
+        <script src="public/js/global.js"></script>
+        <script src="public/js/app.js"></script>
+        <script src="public/js/directives.js"></script>
+        <script src="public/js/controllers.js"></script>
+        <script src="public/js/services.js"></script>
+        <!-- endbuild -->
+
+        <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=oz7PQoGbGLr7Fk1lM9wp8hHS"></script>
+    </head>
+
+    <body ng-app="jdxtapp">
+        <ion-nav-view></ion-nav-view>
+    </body>
+</html>

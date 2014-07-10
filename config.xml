@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="com.zlzkj.jdxtapp" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <name>浙江好行</name>
+    <description>
+        
+    </description>
+    <author email="dev@zlzkj.com" href="http://www.zlzkj.com">
+        Zlz Team
+    </author>
+    <content src="index.html" />
+    <access origin="*" />
+    <feature name="Toast">
+	  <param name="android-package" value="nl.xservices.plugins.Toast" />
+	</feature>
+    <platform name="android">
+        <icon src="res/android/icon36.png" density="ldpi" />
+        <icon src="res/android/icon48.png" density="mdpi" />
+        <icon src="res/android/icon64.png" density="hdpi" />
+        <icon src="res/android/icon96.png" density="xhdpi" />
+    </platform>
+    <preference name="SplashScreen" value="splash" />
+    <preference name="SplashScreenDelay" value="5000" />
+</widget>

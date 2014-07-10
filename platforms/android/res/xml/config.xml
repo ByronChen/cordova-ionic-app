@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="com.zlzkj.jdxtapp" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <preference name="loglevel" value="DEBUG" />
+    <preference name="AndroidLaunchMode" value="singleTop" />
+    <feature name="App">
+        <param name="android-package" value="org.apache.cordova.App" />
+    </feature>
+    <feature name="Keyboard">
+        <param name="android-package" value="com.ionic.keyboard.IonicKeyboard" />
+        <param name="onload" value="true" />
+    </feature>
+    <feature name="Device">
+        <param name="android-package" value="org.apache.cordova.device.Device" />
+    </feature>
+    <feature name="SplashScreen">
+        <param name="android-package" value="org.apache.cordova.splashscreen.SplashScreen" />
+    </feature>
+    <icon density="ldpi" src="res/android/icon36.png" />
+    <icon density="mdpi" src="res/android/icon48.png" />
+    <icon density="hdpi" src="res/android/icon64.png" />
+    <icon density="xhdpi" src="res/android/icon96.png" />
+    <name>浙江好行</name>
+    <description>
+    </description>
+    <author email="dev@zlzkj.com" href="http://www.zlzkj.com">
+        Zlz Team
+    </author>
+    <content src="index.html" />
+    <access origin="*" />
+    <feature name="Toast">
+        <param name="android-package" value="nl.xservices.plugins.Toast" />
+    </feature>
+    <preference name="SplashScreen" value="splash" />
+    <preference name="SplashScreenDelay" value="5000" />
+</widget>
